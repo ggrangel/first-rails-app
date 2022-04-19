@@ -10,4 +10,9 @@ end
     @posts = Post.all
   end
 
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+  end
+
 end
