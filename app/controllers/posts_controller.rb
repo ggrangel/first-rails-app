@@ -4,5 +4,10 @@ class PostsController < ApplicationController
     new_post = Post.create(content: params[:content], user_id: params[:user_id])
 
     render json: { post: new_post }
+end
+
+  def list
+    @posts = Post.all
   end
+
 end
