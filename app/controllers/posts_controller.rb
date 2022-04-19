@@ -15,4 +15,10 @@ end
     @post.destroy
   end
 
+  def update
+    @post = Post.find(params[:id])
+    @post.content=params[:content]
+    @post.save
+  end
+
 end

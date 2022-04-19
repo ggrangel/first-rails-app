@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   post '/posts', to: 'posts#create'
   get '/posts', to: 'posts#list'
   delete '/posts/:id', to: 'posts#destroy'
+  put '/posts/:id', to: 'posts#update'
 end
